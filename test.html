@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negrail</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-yellow-200">
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="hover:cursor-pointer">
+                    <img src="/miss-lilys.png" class="w-56 lg:w-64 inline justify-start" alt="Miss Lily's Logo">
+                </a>
+            </div>
+            <div class="lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-12 w-12 hover:text-gray-300 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </div>
+            <div class="hidden lg:flex space-x-4 navbar">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">Locations</a></li>
+                    <li class="dropdown relative">
+                        <a href="#" class="hover:text-gray-300">Menus</a>
+                        <ul class="absolute hidden bg-gray-800 text-white rounded-lg p-2 space-y-1 dropdown-menu">
+                            <li><a href="#" class="hover:text-gray-300">Menu 1</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Menu 2</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Menu 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Catering</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Reservations</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Delivery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // You can optionally add JavaScript for closing the dropdown when clicking outside
+    </script>
+</body>
+</html>

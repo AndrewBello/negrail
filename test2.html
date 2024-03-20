@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="carousel relative bg-gray-100">
+  <div class="carousel-images flex">
+    <img src="bg-image.avif" alt="Image 1" class="w-full hidden">
+    <img src="lilys_ext.avif" alt="Image 2" class="w-full hidden">
+    <img src="miss-lilys-board.avif" alt="Image 3" class="w-full hidden">
+    <img src="miss-lily-s-negril.jpg" alt="Image 4" class="w-full hidden">
+  </div>
+  <button class="prev-button absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white px-3 py-1 rounded-full z-10">&#10094;</button>
+  <button class="next-button absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white px-3 py-1 rounded-full z-10">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
